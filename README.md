@@ -24,6 +24,44 @@ Laravel es accesible, potente y proporciona las herramientas necesarias para apl
     - Instalacion con Docker usando [Laradock](https://laradock.io/getting-started/).
     - Intalación en Windows con [Laragon](https://laragon.org/download/index.html).
 - Estructura de Carpetas
+- Rutas
+    Cuando accedemos a una aplicación laravel lo primero que se cargan son las rutas.
+    Las rutas mas utilizadas son las siguientes:
+    ```php
+        Route::get($uri, $callback);
+        Route::post($uri, $callback);
+        Route::put($uri, $callback);
+        Route::patch($uri, $callback);
+        Route::delete($uri, $callback);
+        Route::options($uri, $callback);
+    ```
+    Si queremos una ruta que solo retorna una vista podemos usar la siguiente metodo:
+    ```php 
+        Route::view($uri, $view); 
+    ```
+
+    Incluso en ocaciones podemos responder a varios metodos y para eso podemos utilizar el metodo
+    ```php 
+        Route::match(['get', 'post'], '/', function () {
+            // ...
+        });
+    ```
+
+    O si queremos respoder a todos los tipos de peticiones podemos utilizar el metodo:
+    ```php 
+        Route::any('/', function () {
+            // ...
+        });
+    ```
+    Para listar todas las rutas que tenemos sisponible tenemos el comando
+    ` php artisan route:list `
+
+- Vistas
+- Integración de Estilos
+    Como comprenderas laravel es un full stack framework ya que no solo provee herramientas no solo para el backend sino tambien para el frontend y en el frontend moderno se utilizan herramientas para compilar archivos css y javascript, herramientas que nos ayuden a acelerar el proceso de desarrollo, en laravel se utiliza vite.
+
+    Para instalar vite vasta con ejecutar 
+    ` npm install `
 
 ## Seguir Aprendiendo Laravel
 
