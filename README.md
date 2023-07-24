@@ -95,6 +95,9 @@ Laravel es accesible, potente y proporciona las herramientas necesarias para apl
 - Blade, el motor de plantillas de Laravel (Herencia y Componente)
 
     Blade es el motor de plantillas de laravel y es el que nos permite escribir php dentro de html de una forma mas elegante y descriptiva, para utilizar blade el unico requisito es que la vista debe tener extencion .blade.php, para utilizar php en html podemos hacerlo con {{ }} esto nos permite escapar codigo html con la funcion e() una vez que se compilan las vistas y cuando no quieras que se escape el contenido html debes hacerlo con esta sintaxis {!! !!}, Blade tabien tiene algunas directivas que puedes usas para contruir tu plantilla las cuales puedes encontrar en la documentacion oficial.
+- Conexión a Base de Datos
+- Migraciones
+
 
 ## Seguir Aprendiendo Laravel
 
