@@ -8,7 +8,7 @@
     <meta content="{{ $metaDescription ?? 'Default meta description' }}">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body>
+<body class="antialiased bg-slate-100 dark:bg-slate-900">
     <x-layouts.navegation />
 
     {{ $slot }}

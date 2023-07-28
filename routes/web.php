@@ -17,6 +17,8 @@ use App\Http\Controllers\BlogController;
 Route::view('/', 'welcome')->name('home');
 
 Route::get('/blog', [BlogController::class, 'index'])->name('blog');
+Route::get('/posts/create', [BlogController::class, 'create'])->name('posts.create');
+Route::post('/posts', [BlogController::class, 'store'])->name('posts.store');
 
 Route::view('/about', 'about')->name('about');
 
