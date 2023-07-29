@@ -11,6 +11,8 @@
 <body>
     @include('partials.nav')
 
+    <x-flash::message />
+
     @yield('content')
 
 </body>

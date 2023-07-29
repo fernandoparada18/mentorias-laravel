@@ -23,6 +23,8 @@ class Post extends Model
         'slug'
     ];
 
+    //protected $guarded = [];
+
     /**
      * Return the sluggable configuration array for this model.
      *

@@ -11,7 +11,14 @@
 <body class="antialiased bg-slate-100 dark:bg-slate-900">
     <x-layouts.navegation />
 
+    <x-flash::message />
+
     {{ $slot }}
 
+    <script>
+        setTimeout(function() {
+			document.querySelector('div.bg-green-500').style.display = 'none';
+		}, 3000);
+    </script>
 </body>
 </html>
